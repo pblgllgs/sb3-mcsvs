@@ -2,6 +2,7 @@ package com.pblgllgs.productservice.service;
 
 import com.pblgllgs.productservice.dto.ProductRequest;
 import com.pblgllgs.productservice.dto.ProductResponse;
+import com.pblgllgs.productservice.exception.ProductNotFoundException;
 import com.pblgllgs.productservice.model.Product;
 import com.pblgllgs.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
@@ -49,7 +50,7 @@ public class ProductService {
         Optional<Product> productOptional = productRepository.findById(id);
         if (productOptional.isEmpty()) {
             log.error("{} -> Product not found with id: {}", ProductService.log.getName(), id);
-            throw new RuntimeException("PRODUCT_NOT_FOUND_WITH_ID: " + id);
+            throw new ProductNotFoundException("PRODUCT_NOT_FOUND_WITH_ID: " + id);
         }
         Product productDb = productOptional.get();
         log.info("{} -> Product response: {}", ProductService.log.getName(), productDb);
