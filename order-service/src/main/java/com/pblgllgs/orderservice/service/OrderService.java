@@ -1,6 +1,8 @@
 package com.pblgllgs.orderservice.service;
 
+import com.pblgllgs.orderservice.clients.InventoryClient;
 import com.pblgllgs.orderservice.dto.OrderRequest;
+import com.pblgllgs.orderservice.mapper.OrderMapper;
 import com.pblgllgs.orderservice.model.Order;
 import com.pblgllgs.orderservice.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,15 +21,15 @@ import java.util.UUID;
 public class OrderService {
 
     private final OrderRepository orderRepository;
+    private final InventoryClient inventoryClient;
 
     public void placeOrder(OrderRequest orderRequest){
-        Order order = new Order();
-        order.setOrderNumber(UUID.randomUUID().toString());
-        order.setPrice(orderRequest.price());
-        order.setSkuCode(orderRequest.skuCode());
-        order.setQuantity(orderRequest.quantity());
+        boolean inStock = inventoryClient.isInStock(orderRequest.skuCode(), orderRequest.quantity());
+        if (!inStock){
+            throw new RuntimeException("Not enough stock of product with SKU " + orderRequest.skuCode());
+        }
+        Order order = OrderMapper.dtoToEntity(orderRequest);
         orderRepository.save(order);
     }
-
 
 }

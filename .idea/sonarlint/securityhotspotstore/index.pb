@@ -53,3 +53,17 @@ W
 cinventory-service/src/test/java/com/pblgllgs/inventoryservice/InventoryServiceApplicationTests.java,2\0\203c66f6934da06c68212c7d727d9c839a9c2c57
 I
 inventory-service/pom.xml,e\3\e347da292c40d252c508703eddff460d1f378f1c
+‚
+Rorder-service/src/main/java/com/pblgllgs/orderservice/OrderServiceApplication.java,3\1\315a75056f594939ff59e5cc82814443dd504ff4
+‚
+Rorder-service/src/main/java/com/pblgllgs/orderservice/clients/InventoryClient.java,6\2\62df6eb3a160528b77157411dbf0be07bb295bb0
+ˆ
+Xproduct-service/src/main/java/com/pblgllgs/productservice/ProductServiceApplication.java,f\d\fd9b7ea764edfcb2b14fa8f0a6a44afb02dcd601
+~
+Norder-service/src/test/java/com/pblgllgs/orderservice/stubs/InventoryStub.java,a\f\afd11d049092a3d78631979f628f451417a7af84
+
+Oorder-service/src/test/java/com/pblgllgs/orderservice/stubs/InventoryStubs.java,e\0\e0558d88a1770e6b9d201a6261fd611bab550995
+}
+Morder-service/src/main/java/com/pblgllgs/orderservice/mapper/OrderMapper.java,d\f\dfb9cc93e3bfeffd78ddd684c62cbe5e5970295e
+€
+Pproduct-service/src/main/java/com/pblgllgs/productservice/loader/DataLoader.java,5\2\521457fc459918182b7cf31bb78d1cba0e3b673f
