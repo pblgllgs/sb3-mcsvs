@@ -1,5 +1,8 @@
 
 start:
+	@echo "initializing docker containers in keycloak..."
+	@docker-compose -f keycloak/docker-compose.yml up -d
+
 	@echo "initializing docker containers in inventory service..."
 	@docker-compose -f inventory-service/docker-compose.yaml up -d
 
@@ -12,6 +15,9 @@ start:
 	@echo "Containers successfully deployed"
 
 stop:
+	@echo "Stopping containers in inventory service..."
+	@docker-compose -f keycloak/docker-compose.yml down
+
 	@echo "Stopping containers in inventory service..."
 	@docker-compose -f inventory-service/docker-compose.yaml down
 

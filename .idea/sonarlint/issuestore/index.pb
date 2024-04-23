@@ -63,10 +63,6 @@ Oorder-service/src/test/java/com/pblgllgs/orderservice/stubs/InventoryStubs.java
 Morder-service/src/main/java/com/pblgllgs/orderservice/mapper/OrderMapper.java,d\f\dfb9cc93e3bfeffd78ddd684c62cbe5e5970295e
 8
 Makefile,8\3\836efb6e25a091dcb4ff8e1dbb2f0be6a5cbf14c
-m
-=api-gateway/src/main/java/com/pblgllgs/apigateway/routes.java,d\8\d8ba981a6422069b30b9009c0d97bd1b0913c964
-m
-=api-gateway/src/main/java/com/pblgllgs/apigateway/Routes.java,d\f\df73d03bdbaf91ce1b7fcab25596ceaa9cf28676
 t
 Dapi-gateway/src/main/java/com/pblgllgs/apigateway/routes/Routes.java,4\d\4da207335eacd4f23722bb5cf04cc05fcae13cb8
 H
@@ -79,3 +75,14 @@ H
 order-service/Dockerfile,6\c\6ca8c7ba98a55aa5204b50509916e7ece908a304
 J
 product-service/Dockerfile,5\a\5acdeee26f319910f4b78e31e20e10b81c2b9f1c
+K
+keycloak/docker-compose.yml,d\8\d845449beca0c7e74d87ffc71dc4b06fe1c4fdac
+C
+api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
+|
+Lapi-gateway/src/main/java/com/pblgllgs/apigateway/config/SecurityConfig.java,2\2\22de4852f1677c84ffad55aaf48110b35baa7c54
+B
+keycloak/README.md,1\c\1c883db81b16d37bd1116bbe209486a1fa0d4782
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
