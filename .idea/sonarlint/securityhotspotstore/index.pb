@@ -86,3 +86,15 @@ B
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+Ž
+^inventory-service/src/main/java/com/pblgllgs/inventoryservice/InventoryServiceApplication.java,a\5\a5f858f7e9a06a1b0e7ee55e08308e43c88cedfd
+ƒ
+Sproduct-service/src/main/java/com/pblgllgs/productservice/config/OpenAPIConfig.java,1\8\18dc2518851570771157bdfbc2130d624719dbcd
+
+Oorder-service/src/main/java/com/pblgllgs/orderservice/config/OpenAPIConfig.java,2\3\23e5cc7163dd4961a178cd39b28ee65c40663e3f
+‡
+Winventory-service/src/main/java/com/pblgllgs/inventoryservice/config/OpenAPIConfig.java,8\b\8b9e0e8eb498c043cf82c0fd1a3978cfeef9b3c1
+‚
+Rorder-service/src/main/java/com/pblgllgs/orderservice/config/RestClientConfig.java,a\0\a0b77277d46eb2a0f5ae9c04bb5106bd36f2457b
+|
+Lapi-gateway/src/main/java/com/pblgllgs/apigateway/ApiGatewayApplication.java,6\8\68dabbedb71dc0360fb3439e57c32121ffdae654

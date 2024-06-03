@@ -30,6 +30,11 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<List<ProductResponse>> getAllProducts() {
+//        try{
+//            Thread.sleep(5000);
+//        }catch (InterruptedException ex ){
+//            throw new RuntimeException(ex);
+//        }
         return new ResponseEntity<>(productService.getAllProducts(), HttpStatus.OK);
     }
 
